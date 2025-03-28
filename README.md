@@ -15,19 +15,19 @@ IntelliJ IDEA o cualquier IDE compatible con Spring Boot
 🔹 Clonar el repositorio
 
 Ejecuta el siguiente comando en la terminal:
-
+```bash
 git clone https://github.com/cachi001/noticias-tp.git
-
+```
 🔹 Configurar el Frontend
 
 1️⃣ Abre la carpeta del frontend en Visual Studio Code o tu editor favorito.2️⃣ Instala las dependencias ejecutando:
-
+```bash
 npm install
-
+```
 3️⃣ Inicia la aplicación con:
-
+```bash
 npm run dev
-
+```
 4️⃣ Accede a la página en http://localhost:5173.
 
 Si el puerto es diferente, cambiarlo en config/webConfig del backend.
