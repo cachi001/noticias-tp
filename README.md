@@ -1,4 +1,4 @@
-🌟 TP Magninon
+🌟 TP Noticias
 
 📌 Requisitos previos
 
