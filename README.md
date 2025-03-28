@@ -61,6 +61,7 @@ EJEMPLO DE DATOS PARA CARGAR DESDE MYSQL
 
 🔹 **EMPRESA**
 
+```sql
 INSERT INTO empresa (denominacion, domicilio, email, horario_atencion, latitud, longitud, quienes_somos, telefono)
 VALUES
 ('AutoRepuestos S.A.', 'Calle Falsa 123, Ciudad, Provincia', 'contacto@autorepuestos.com', 'Lunes a Viernes de 9:00 a 18:00', -34.6037, -58.3816, 'En AutoRepuestos S.A. somos una empresa especializada en la venta de repuestos para vehículos con más de 20 años de experiencia en el sector.', '011-1234-5678'),
@@ -68,7 +69,7 @@ VALUES
 ('Limpieza Total', 'Calle Higiene 789, Barrio Limón, Ciudad', 'ventas@limpiezatotal.com', 'Lunes a Sábado de 10:00 a 19:00', -34.6231, -58.4321, 'Limpieza Total ofrece productos de limpieza ecológicos y servicios profesionales para empresas y hogares.', '011-5432-8765'),
 ('Comercializadora Global', 'Ruta 12 Km 45, Ciudad', 'contacto@comercializadora-global.com', 'Lunes a Viernes de 9:00 a 17:00', -34.7000, -58.4000, 'Comercializadora Global es una empresa importadora y distribuidora de productos alimenticios y de consumo masivo a nivel internacional.', '011-2345-6789'),
 ('Soluciones Energéticas', 'Av. Solar 1010, Barrio Solar, Ciudad', 'contacto@solucionesenergeticas.com', 'Lunes a Viernes de 9:00 a 18:00', -34.9123, -58.6234, 'Soluciones Energéticas se especializa en la instalación de sistemas solares y energías renovables para hogares y empresas.', '011-1122-3344');
-
+```
 
 🔹 **NOTICIA**
 
@@ -100,6 +101,7 @@ VALUES
 ```
 🔹 **NOTICIA**
 
+```sql
 INSERT INTO noticia (contenido_html, fecha_publicacion, imagen_noticia, publicada, resumen_noticia, titulo, id_empresa)
 VALUES
 ('<p>Nuevo repuesto disponible para tu automóvil. ¡Visítanos para más información!</p>', '2025-03-01', 'https://images.pexels.com/photos/1029054/pexels-photo-1029054.jpeg', TRUE, 'Lanzamiento de nuevos repuestos para vehículos', 'Nuevo repuesto en AutoRepuestos S.A.', 1),
@@ -122,5 +124,6 @@ VALUES
 ('<p>Hemos mejorado nuestras instalaciones para brindarte un mejor servicio.</p>', '2025-04-13', 'https://images.pexels.com/photos/2792579/pexels-photo-2792579.jpeg', TRUE, 'Instalaciones mejoradas en AutoRepuestos S.A.', 'Mejoras en nuestras instalaciones', 1),
 ('<p>Visítanos este mes y lleva una sorpresa especial con tu compra de repuestos.</p>', '2025-04-15', 'https://images.pexels.com/photos/4392243/pexels-photo-4392243.jpeg', TRUE, 'Sorpresas con tu compra este mes.', 'Sorpresa en tu compra de repuestos', 1),
 ('<p>Contamos con el servicio de reparación de carrocería para todos los modelos de vehículos.</p>', '2025-04-18', 'https://images.pexels.com/photos/4095639/pexels-photo-4095639.jpeg', TRUE, 'Servicio de reparación de carrocería disponible.', 'Reparación de carrocería en AutoRepuestos S.A.', 1);
+```
 
 algunas fotos no cargan
