@@ -72,6 +72,7 @@ VALUES
 
 🔹 **NOTICIA**
 
+```sql
 INSERT INTO noticia (contenido_html, fecha_publicacion, imagen_noticia, publicada, resumen_noticia, titulo, id_empresa)
 VALUES
 ('<p>Nuevo repuesto disponible para tu automóvil. ¡Visítanos para más información!</p>', '2025-03-01', 'https://images.pexels.com/photos/1029054/pexels-photo-1029054.jpeg', TRUE, 'Lanzamiento de nuevos repuestos para vehículos', 'Nuevo repuesto en AutoRepuestos S.A.', 1),
@@ -96,7 +97,7 @@ VALUES
 ('<p>¡Gracias a todos nuestros clientes por su continuo apoyo! Les tenemos sorpresas próximamente.</p>', '2025-04-18', 'https://images.pexels.com/photos/4041185/pexels-photo-4041185.jpeg', TRUE, 'Agradecimiento a los clientes de AutoRepuestos S.A.', 'Gracias por su apoyo en AutoRepuestos S.A.', 1),
 ('<p>TechInnovations lanza un programa de reciclaje tecnológico con el fin de cuidar el medio ambiente.</p>', '2025-04-20', 'https://images.pexels.com/photos/2064565/pexels-photo-2064565.jpeg', TRUE, 'Reciclaje tecnológico para un futuro sostenible.', 'Reciclaje tecnológico en TechInnovations', 2),
 ('<p>¡Nuestro servicio de entrega a domicilio ahora llega más rápido que nunca!</p>', '2025-04-22', 'https://images.pexels.com/photos/3332237/pexels-photo-3332237.jpeg', TRUE, 'Mejora en el servicio de entrega a domicilio.', 'Entrega más rápida en Limpieza Total', 3);
-
+```
 🔹 **NOTICIA**
 
 INSERT INTO noticia (contenido_html, fecha_publicacion, imagen_noticia, publicada, resumen_noticia, titulo, id_empresa)
