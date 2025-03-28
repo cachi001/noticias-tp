@@ -22,7 +22,7 @@ git clone https://github.com/cachi001/noticias-tp.git
 
 🔹 **Configurar el Frontend**
 
-1. Abre la carpeta del **frontend** en Visual Studio Code o tu editor favorito.
+1. Abre la carpeta del **frontend** en Visual Studio Code
 2. Instala las dependencias ejecutando:
 ```bash
 npm install
@@ -39,7 +39,7 @@ Si el puerto es diferente, cambiarlo en `config/webConfig` del backend.
 
 🔹 **Configurar y ejecutar el Backend**
 
-1. Abre la carpeta del **backend** en IntelliJ IDEA o cualquier IDE compatible con Spring Boot.
+1. Abre la carpeta del **backend** en IntelliJ IDEA.
 2. Asegúrate de tener **MySQL Workbench** y **MySQL Server** instalados y en ejecución.
 3. Configura la conexión a la base de datos en el archivo `application.properties`:
 
@@ -54,4 +54,4 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.show-sql=true
 ```
 
-4. Ejecuta la aplicación desde IntelliJ IDEA.
+4. Ejecuten la aplicación desde IntelliJ IDEA.
