@@ -1,0 +1,69 @@
+package org.emiliano.noticiastp.mapper;
+
+import javax.annotation.processing.Generated;
+import org.emiliano.noticiastp.dto.NoticiaCrearDto;
+import org.emiliano.noticiastp.dto.NoticiaDto;
+import org.emiliano.noticiastp.dto.NoticiaHomeDto;
+import org.emiliano.noticiastp.model.Noticia;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2025-03-27T22:35:00-0300",
+    comments = "version: 1.5.5.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-8.13.jar, environment: Java 17.0.11 (Oracle Corporation)"
+)
+@Component
+public class NoticiaMapperImpl implements NoticiaMapper {
+
+    @Override
+    public Noticia toEntity(NoticiaCrearDto noticiaCrearDto) {
+        if ( noticiaCrearDto == null ) {
+            return null;
+        }
+
+        Noticia noticia = new Noticia();
+
+        noticia.setTitulo( noticiaCrearDto.getTitulo() );
+        noticia.setResumenNoticia( noticiaCrearDto.getResumenNoticia() );
+        noticia.setImagenNoticia( noticiaCrearDto.getImagenNoticia() );
+        noticia.setContenidoHtml( noticiaCrearDto.getContenidoHtml() );
+        noticia.setPublicada( noticiaCrearDto.isPublicada() );
+        noticia.setFechaPublicacion( noticiaCrearDto.getFechaPublicacion() );
+
+        return noticia;
+    }
+
+    @Override
+    public NoticiaDto toDto(Noticia noticia) {
+        if ( noticia == null ) {
+            return null;
+        }
+
+        NoticiaDto noticiaDto = new NoticiaDto();
+
+        noticiaDto.setId( noticia.getId() );
+        noticiaDto.setTitulo( noticia.getTitulo() );
+        noticiaDto.setResumenNoticia( noticia.getResumenNoticia() );
+        noticiaDto.setImagenNoticia( noticia.getImagenNoticia() );
+        noticiaDto.setContenidoHtml( noticia.getContenidoHtml() );
+        noticiaDto.setPublicada( noticia.isPublicada() );
+        noticiaDto.setFechaPublicacion( noticia.getFechaPublicacion() );
+
+        return noticiaDto;
+    }
+
+    @Override
+    public NoticiaHomeDto toNoticiaHomeDto(Noticia noticia) {
+        if ( noticia == null ) {
+            return null;
+        }
+
+        NoticiaHomeDto noticiaHomeDto = new NoticiaHomeDto();
+
+        noticiaHomeDto.setId( noticia.getId() );
+        noticiaHomeDto.setTitulo( noticia.getTitulo() );
+        noticiaHomeDto.setResumenNoticia( noticia.getResumenNoticia() );
+
+        return noticiaHomeDto;
+    }
+}
